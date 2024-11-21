@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import UseState from './UseState'
+import LoginForm from './LoginForm'
+import ShowHideDetails from './ShowHideDetails'
+import TodoList from './TodoList'
+// import ListRendring from './ListRendring'
+import ListKey from './ListKey'
+// import FormHandlingUseState from './FormHandlingUseState'
+// import FormHandlingUseState from './FormHandlingUseState'
+// import FetchApiFromBc from './FetchApiFromBc'
+// import FetchApi from './FetchApi'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <FetchApiFromBc/> */}
+      {/* <FetchApi/> */}
+      <UseState/>
+   {/* <FormHandlingUseState/> */}
+   <LoginForm/>
+   <ShowHideDetails/>
+<TodoList/>
+
+{/* <ListRendring/> */}
+<ListKey/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
